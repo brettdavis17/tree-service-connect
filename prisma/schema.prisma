@@ -1,0 +1,131 @@
+// prisma/schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Companies from your CSV data
+model Company {
+  id              String   @id @default(cuid())
+  placeId         String   @unique @map("place_id")
+  name            String
+  phone           String?
+  address         String?
+  website         String?
+  rating          Float?
+  reviewCount     Int?     @map("review_count")
+  latitude        Float?
+  longitude       Float?
+  businessStatus  String?  @map("business_status")
+  types           String?
+  priceLevel      Int?     @map("price_level")
+  
+  // Your enhanced data
+  city            String?
+  state           String?
+  services        String[] // ["tree_removal", "stump_grinding", "trimming"]
+  serviceRadius   Int?     @map("service_radius") // miles
+  hasInsurance    Boolean? @map("has_insurance")
+  hasCrane        Boolean? @map("has_crane")
+  emergencyService Boolean? @map("emergency_service")
+  pricingTier     String?  @map("pricing_tier") // "budget", "mid", "premium"
+  yearsInBusiness Int?     @map("years_in_business")
+  
+  // Business relationship
+  isActive        Boolean  @default(true)
+  subscriptionTier String? @map("subscription_tier") // "free", "basic", "premium"
+  monthlyFee      Float?   @map("monthly_fee")
+  leadPrice       Float?   @map("lead_price")
+  
+  // Timestamps
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+  lastDataUpdate  DateTime? @map("last_data_update")
+  
+  // Relations
+  leads           LeadDistribution[]
+  
+  @@map("companies")
+}
+
+// Lead generation
+model Lead {
+  id              String   @id @default(cuid())
+  
+  // Customer info
+  customerName    String   @map("customer_name")
+  customerPhone   String   @map("customer_phone")
+  customerEmail   String?  @map("customer_email")
+  
+  // Property details
+  propertyAddress String   @map("property_address")
+  city            String
+  state           String
+  latitude        Float?
+  longitude       Float?
+  
+  // Job details
+  serviceType     String[] @map("service_type") // ["tree_removal", "trimming"]
+  treeCount       String   @map("tree_count") // "1", "2-3", "4-6", etc.
+  treeSize        String[] @map("tree_size") // ["small", "large"]
+  nearStructures  String[] @map("near_structures") // ["house", "power_lines"]
+  urgency         String   // "emergency", "urgent", "soon", "planning"
+  budgetRange     String?  @map("budget_range")
+  description     String?
+  photos          String[] // URLs to uploaded photos
+  
+  // Business data
+  status          String   @default("new") // "new", "distributed", "sold", "expired"
+  leadPrice       Float?   @map("lead_price")
+  
+  // Timestamps
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+  
+  // Relations
+  distributions   LeadDistribution[]
+  
+  @@map("leads")
+}
+
+// Lead distribution to companies
+model LeadDistribution {
+  id              String   @id @default(cuid())
+  
+  leadId          String   @map("lead_id")
+  companyId       String   @map("company_id")
+  
+  // Distribution details
+  price           Float    // What company paid for this lead
+  status          String   @default("sent") // "sent", "viewed", "responded", "won", "lost"
+  responseTime    Int?     @map("response_time") // minutes until first response
+  
+  // Timestamps
+  sentAt          DateTime @default(now()) @map("sent_at")
+  viewedAt        DateTime? @map("viewed_at")
+  respondedAt     DateTime? @map("responded_at")
+  
+  // Relations
+  lead            Lead     @relation(fields: [leadId], references: [id])
+  company         Company  @relation(fields: [companyId], references: [id])
+  
+  @@map("lead_distributions")
+}
+
+// User accounts (for company logins later)
+model User {
+  id              String   @id @default(cuid())
+  email           String   @unique
+  name            String?
+  role            String   @default("company") // "admin", "company"
+  companyId       String?  @map("company_id")
+  
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+  
+  @@map("users")
+}
