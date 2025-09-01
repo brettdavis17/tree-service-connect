@@ -45,7 +45,7 @@ export default function CitiesPage() {
           
           <div className="mt-12 text-center">
             <p className="text-gray-600">
-              Don't see your city? We're expanding our coverage area. 
+              Don&apos;t see your city? We&apos;re expanding our coverage area. 
               <Link href="/" className="text-green-600 hover:text-green-700 ml-1">
                 Contact us for more information.
               </Link>

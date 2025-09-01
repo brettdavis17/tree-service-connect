@@ -12,7 +12,7 @@ export default function AboutPage() {
           
           <div className="prose prose-lg text-gray-600 space-y-6">
             <p>
-              TreeServiceConnect is East Texas and North Louisiana's premier directory for connecting 
+              TreeServiceConnect is East Texas and North Louisiana&apos;s premier directory for connecting 
               homeowners with qualified tree service professionals. We understand the unique challenges 
               of maintaining trees in the heavily forested Piney Woods region.
             </p>
@@ -36,7 +36,7 @@ export default function AboutPage() {
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Our Mission</h2>
             
             <p>
-              We're dedicated to making tree care simple and reliable for homeowners while supporting 
+              We&apos;re dedicated to making tree care simple and reliable for homeowners while supporting 
               local tree service businesses. Whether you need routine maintenance, emergency storm cleanup, 
               or major tree removal, we connect you with the right professionals for your specific needs.
             </p>
