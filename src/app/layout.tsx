@@ -43,6 +43,50 @@ export default function RootLayout({
             `,
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "TreeServiceConnect",
+              "description": "Directory of qualified tree service professionals in East Texas and North Louisiana",
+              "url": "https://treeserviceconnect.com",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://treeserviceconnect.com/cities?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              },
+              "mainEntity": {
+                "@type": "ItemList",
+                "name": "Tree Service Directory",
+                "description": "Directory of tree service companies in East Texas and North Louisiana",
+                "itemListElement": [
+                  {
+                    "@type": "Service",
+                    "name": "Tree Removal Services",
+                    "areaServed": ["Kilgore, TX", "Longview, TX", "Henderson, TX", "Tyler, TX", "Shreveport, LA"]
+                  },
+                  {
+                    "@type": "Service", 
+                    "name": "Tree Trimming Services",
+                    "areaServed": ["Kilgore, TX", "Longview, TX", "Henderson, TX", "Tyler, TX", "Shreveport, LA"]
+                  },
+                  {
+                    "@type": "Service",
+                    "name": "Stump Grinding Services", 
+                    "areaServed": ["Kilgore, TX", "Longview, TX", "Henderson, TX", "Tyler, TX", "Shreveport, LA"]
+                  },
+                  {
+                    "@type": "Service",
+                    "name": "Emergency Tree Services",
+                    "areaServed": ["Kilgore, TX", "Longview, TX", "Henderson, TX", "Tyler, TX", "Shreveport, LA"]
+                  }
+                ]
+              }
+            })
+          }}
+        />
       </head>
       <body className={inter.className}>
         {children}
