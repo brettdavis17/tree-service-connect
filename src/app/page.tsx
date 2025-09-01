@@ -1,9 +1,21 @@
 // src/app/page.tsx
+import { Metadata } from 'next';
 import Link from 'next/link';
 import { MapPin, Star, Phone, Users, Shield, Clock } from 'lucide-react';
 import { CTAButton } from './components/CTAButton';
 import { LeadForm } from './components/LeadForm';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  description: 'Find trusted tree service professionals in East Texas and North Louisiana. Get free quotes for tree removal, trimming, stump grinding, and emergency services in Kilgore, Longview, Henderson, Tyler, and Shreveport.',
+  alternates: {
+    canonical: 'https://treeserviceconnect.com'
+  },
+  openGraph: {
+    description: 'Find trusted tree service professionals in East Texas and North Louisiana. Get free quotes for tree removal, trimming, stump grinding, and emergency services.',
+    url: 'https://treeserviceconnect.com'
+  },
+};
 
 export default function HomePage() {
   return (
@@ -86,7 +98,7 @@ export default function HomePage() {
               </div>
 
               <div className="text-sm text-gray-500">
-                <strong>Serving:</strong> Kilgore, Longview, Henderson, Tyler, Marshall, Shreveport, Monroe, Nacogdoches and surrounding areas
+                <strong>Serving:</strong> <Link href="/tree-service-kilgore-tx" className="text-green-600 hover:text-green-700 underline">Kilgore</Link>, <Link href="/tree-service-longview-tx" className="text-green-600 hover:text-green-700 underline">Longview</Link>, <Link href="/tree-service-henderson-tx" className="text-green-600 hover:text-green-700 underline">Henderson</Link>, Tyler, Marshall, Shreveport, Monroe, Nacogdoches and surrounding areas
               </div>
             </div>
 
@@ -431,7 +443,7 @@ export default function HomePage() {
             
 //             <div>
 //               <h4 className="font-semibold mb-4">Service Areas</h4>
-//               <ul className="text-gray-300 text-sm space-y-2">
+//             <ul className="text-gray-300 text-sm space-y-2">
 //                 <li>East Texas</li>
 //                 <li>North Louisiana</li>
 //                 <li>Piney Woods Region</li>

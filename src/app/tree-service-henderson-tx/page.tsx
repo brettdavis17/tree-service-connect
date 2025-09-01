@@ -80,6 +80,14 @@ export const metadata = {
   title: 'Tree Service Henderson TX - Top Rated Companies Within 25 Miles',
   description: 'Find qualified tree service professionals in Henderson, TX and surrounding areas. Get free quotes for tree removal, trimming, stump grinding & emergency services from local experts.',
   keywords: 'tree service Henderson TX, tree removal Henderson, stump grinding Henderson, tree trimming Henderson, Arp tree service, Overton tree service',
+  alternates: {
+    canonical: 'https://treeserviceconnect.com/tree-service-henderson-tx'
+  },
+  openGraph: {
+    title: 'Tree Service Henderson TX - Top Rated Companies Within 25 Miles',
+    description: 'Find qualified tree service professionals in Henderson, TX and surrounding areas. Get free quotes for tree removal, trimming, stump grinding & emergency services from local experts.',
+    url: 'https://treeserviceconnect.com/tree-service-henderson-tx'
+  }
 };
 
 

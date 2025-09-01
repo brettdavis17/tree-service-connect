@@ -80,5 +80,13 @@ export const metadata = {
   title: 'Tree Service Longview TX - Top Rated Companies Within 25 Miles',
   description: 'Find qualified tree service professionals in Longview, TX and surrounding areas. Get free quotes for tree removal, trimming, stump grinding & emergency services from local experts.',
   keywords: 'tree service Longview TX, tree removal Longview, stump grinding Longview, tree trimming Longview, White Oak tree service, Gladewater tree service',
+  alternates: {
+    canonical: 'https://treeserviceconnect.com/tree-service-longview-tx'
+  },
+  openGraph: {
+    title: 'Tree Service Longview TX - Top Rated Companies Within 25 Miles',
+    description: 'Find qualified tree service professionals in Longview, TX and surrounding areas. Get free quotes for tree removal, trimming, stump grinding & emergency services from local experts.',
+    url: 'https://treeserviceconnect.com/tree-service-longview-tx'
+  }
 };
 

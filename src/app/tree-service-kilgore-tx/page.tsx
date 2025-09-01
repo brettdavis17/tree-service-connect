@@ -80,6 +80,14 @@ export const metadata = {
   title: 'Tree Service Kilgore TX - Top Rated Companies Within 25 Miles',
   description: 'Find qualified tree service professionals in Kilgore, TX and surrounding areas. Get free quotes for tree removal, trimming, stump grinding & emergency services from local experts.',
   keywords: 'tree service Kilgore TX, tree removal Kilgore, stump grinding Kilgore, tree trimming Kilgore, Tatum tree service, Overton tree service',
+  alternates: {
+    canonical: 'https://treeserviceconnect.com/tree-service-kilgore-tx'
+  },
+  openGraph: {
+    title: 'Tree Service Kilgore TX - Top Rated Companies Within 25 Miles',
+    description: 'Find qualified tree service professionals in Kilgore, TX and surrounding areas. Get free quotes for tree removal, trimming, stump grinding & emergency services from local experts.',
+    url: 'https://treeserviceconnect.com/tree-service-kilgore-tx'
+  }
 };
 
 

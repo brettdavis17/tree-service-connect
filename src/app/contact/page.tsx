@@ -142,4 +142,12 @@ export default function ContactPage() {
 export const metadata = {
   title: 'Contact Us - TreeServiceConnect Tree Services Directory',
   description: 'Contact TreeServiceConnect for questions about our tree service directory covering East Texas and North Louisiana.',
+  alternates: {
+    canonical: 'https://treeserviceconnect.com/contact'
+  },
+  openGraph: {
+    title: 'Contact Us - TreeServiceConnect Tree Services Directory',
+    description: 'Contact TreeServiceConnect for questions about our tree service directory covering East Texas and North Louisiana.',
+    url: 'https://treeserviceconnect.com/contact'
+  }
 };

@@ -59,4 +59,12 @@ export default function AboutPage() {
 export const metadata = {
   title: 'About TreeServiceConnect - East Texas Tree Service Directory',
   description: 'Learn about TreeServiceConnect, East Texas and North Louisiana\'s premier directory for connecting homeowners with qualified tree service professionals.',
+  alternates: {
+    canonical: 'https://treeserviceconnect.com/about'
+  },
+  openGraph: {
+    title: 'About TreeServiceConnect - East Texas Tree Service Directory',
+    description: 'Learn about TreeServiceConnect, East Texas and North Louisiana\'s premier directory for connecting homeowners with qualified tree service professionals.',
+    url: 'https://treeserviceconnect.com/about'
+  }
 };
