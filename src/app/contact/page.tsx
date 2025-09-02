@@ -62,65 +62,41 @@ export default function ContactPage() {
               </div>
             </div>
             
-            {/* Contact Form */}
+            {/* Contact Information */}
             <div>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-6">Send a Message</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-6">Get in Touch</h2>
               
-              <form className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Name *
-                  </label>
-                  <input 
-                    type="text"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-                    placeholder="Your name"
-                  />
+              <div className="space-y-6">
+                <p className="text-gray-600">
+                  Have questions about TreeServiceConnect or need help finding tree service professionals in your area? We're here to help!
+                </p>
+                
+                <div className="p-6 bg-green-50 rounded-lg border border-green-100">
+                  <h3 className="font-semibold text-gray-900 mb-4">Send us an email</h3>
+                  <a 
+                    href="mailto:brett@treeserviceconnect.com"
+                    className="text-2xl font-semibold text-green-600 hover:text-green-700 transition-colors"
+                  >
+                    brett@treeserviceconnect.com
+                  </a>
+                  <p className="text-gray-600 mt-2">
+                    Click to open your email client, or copy and paste the address above.
+                  </p>
                 </div>
                 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Email *
-                  </label>
-                  <input 
-                    type="email"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-                    placeholder="your.email@example.com"
-                  />
+                <div className="p-6 bg-blue-50 rounded-lg border border-blue-100">
+                  <h3 className="font-semibold text-gray-900 mb-4">Call us</h3>
+                  <a 
+                    href="tel:+19038068005"
+                    className="text-2xl font-semibold text-blue-600 hover:text-blue-700 transition-colors"
+                  >
+                    (903) 806-8005
+                  </a>
+                  <p className="text-gray-600 mt-2">
+                    Click to call on mobile devices, or dial the number above.
+                  </p>
                 </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Subject
-                  </label>
-                  <input 
-                    type="text"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-                    placeholder="Subject of your message"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Message *
-                  </label>
-                  <textarea 
-                    rows={5}
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-                    placeholder="Your message..."
-                  />
-                </div>
-                
-                <button 
-                  type="submit"
-                  className="w-full bg-green-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-green-700 transition-colors"
-                >
-                  Send Message
-                </button>
-              </form>
+              </div>
             </div>
           </div>
         </div>
