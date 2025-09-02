@@ -13,7 +13,7 @@ export function Header() {
               <ArrowLeft className="h-5 w-5 mr-2" />
               <Image 
                 src="/treeserviceconnect-woodmark.png" 
-                alt="TreeServiceConnect"
+                alt="TreeServiceConnect - East Texas Tree Service Directory"
                 width={180}
                 height={40}
                 className="h-8 w-auto"

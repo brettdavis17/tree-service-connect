@@ -65,6 +65,17 @@ export const metadata = {
   openGraph: {
     title: 'About TreeServiceConnect - East Texas Tree Service Directory',
     description: 'Learn about TreeServiceConnect, East Texas and North Louisiana\'s premier directory for connecting homeowners with qualified tree service professionals.',
-    url: 'https://treeserviceconnect.com/about'
+    url: 'https://treeserviceconnect.com/about',
+    siteName: 'TreeServiceConnect',
+    images: [
+      {
+        url: 'https://treeserviceconnect.com/treeserviceconnect-woodmark.png',
+        width: 1200,
+        height: 630,
+        alt: 'About TreeServiceConnect - East Texas Tree Service Directory',
+      }
+    ],
+    locale: 'en_US',
+    type: 'website',
   }
 };

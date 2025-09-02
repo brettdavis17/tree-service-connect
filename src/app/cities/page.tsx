@@ -75,6 +75,17 @@ export const metadata = {
   openGraph: {
     title: 'Service Areas - TreeServiceConnect Tree Services Directory',
     description: 'TreeServiceConnect serves East Texas and North Louisiana including Kilgore, Longview, Tyler, Henderson, Shreveport, Monroe and surrounding areas.',
-    url: 'https://treeserviceconnect.com/cities'
+    url: 'https://treeserviceconnect.com/cities',
+    siteName: 'TreeServiceConnect',
+    images: [
+      {
+        url: 'https://treeserviceconnect.com/treeserviceconnect-woodmark.png',
+        width: 1200,
+        height: 630,
+        alt: 'Service Areas - TreeServiceConnect Directory',
+      }
+    ],
+    locale: 'en_US',
+    type: 'website',
   }
 };

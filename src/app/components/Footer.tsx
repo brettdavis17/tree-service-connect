@@ -12,7 +12,7 @@ export function Footer({ cityName, nearbyAreas }: FooterProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">TreeServiceConnect</h3>
+            <h4 className="text-lg font-semibold mb-4">TreeServiceConnect</h4>
             <p className="text-gray-300 text-sm">
               Connecting {cityName} area homeowners with qualified tree service professionals.
             </p>

@@ -1,7 +1,7 @@
 // src/app/page.tsx
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { MapPin, Star, Phone, Users, Shield, Clock } from 'lucide-react';
+import { MapPin, Star, Shield, Clock } from 'lucide-react';
 import { CTAButton } from './components/CTAButton';
 import { LeadForm } from './components/LeadForm';
 import Image from 'next/image';
@@ -12,8 +12,20 @@ export const metadata: Metadata = {
     canonical: 'https://treeserviceconnect.com'
   },
   openGraph: {
+    title: 'TreeServiceConnect - Find Tree Services in East Texas & North Louisiana',
     description: 'Find trusted tree service professionals in East Texas and North Louisiana. Get free quotes for tree removal, trimming, stump grinding, and emergency services.',
-    url: 'https://treeserviceconnect.com'
+    url: 'https://treeserviceconnect.com',
+    siteName: 'TreeServiceConnect',
+    images: [
+      {
+        url: 'https://treeserviceconnect.com/treeserviceconnect-woodmark.png',
+        width: 1200,
+        height: 630,
+        alt: 'TreeServiceConnect - East Texas Tree Service Directory',
+      }
+    ],
+    locale: 'en_US',
+    type: 'website',
   },
 };
 

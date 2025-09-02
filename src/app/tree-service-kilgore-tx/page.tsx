@@ -86,7 +86,18 @@ export const metadata = {
   openGraph: {
     title: 'Tree Service Kilgore TX - Top Rated Companies Within 25 Miles',
     description: 'Find qualified tree service professionals in Kilgore, TX and surrounding areas. Get free quotes for tree removal, trimming, stump grinding & emergency services from local experts.',
-    url: 'https://treeserviceconnect.com/tree-service-kilgore-tx'
+    url: 'https://treeserviceconnect.com/tree-service-kilgore-tx',
+    siteName: 'TreeServiceConnect',
+    images: [
+      {
+        url: 'https://treeserviceconnect.com/treeserviceconnect-woodmark.png',
+        width: 1200,
+        height: 630,
+        alt: 'Tree Service Kilgore TX - TreeServiceConnect Directory',
+      }
+    ],
+    locale: 'en_US',
+    type: 'website',
   }
 };
 

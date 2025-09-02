@@ -148,6 +148,17 @@ export const metadata = {
   openGraph: {
     title: 'Contact Us - TreeServiceConnect Tree Services Directory',
     description: 'Contact TreeServiceConnect for questions about our tree service directory covering East Texas and North Louisiana.',
-    url: 'https://treeserviceconnect.com/contact'
+    url: 'https://treeserviceconnect.com/contact',
+    siteName: 'TreeServiceConnect',
+    images: [
+      {
+        url: 'https://treeserviceconnect.com/treeserviceconnect-woodmark.png',
+        width: 1200,
+        height: 630,
+        alt: 'Contact TreeServiceConnect - East Texas Tree Service Directory',
+      }
+    ],
+    locale: 'en_US',
+    type: 'website',
   }
 };
