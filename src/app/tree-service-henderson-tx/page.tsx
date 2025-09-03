@@ -77,15 +77,15 @@ export default async function HendersonTreeServicePage() {
 }
 
 export const metadata = {
-  title: 'Tree Service Henderson TX - Top Rated Companies Within 25 Miles',
-  description: 'Find qualified tree service professionals in Henderson, TX and surrounding areas. Get free quotes for tree removal, trimming, stump grinding & emergency services from local experts.',
-  keywords: 'tree service Henderson TX, tree removal Henderson, stump grinding Henderson, tree trimming Henderson, Arp tree service, Overton tree service',
+  title: 'Tree Service Henderson TX - Scenic Piney Woods Tree Specialists',
+  description: 'Professional tree care in beautiful Henderson, TX - Gateway to Piney Woods. Hardwood & pine experts, lakefront property tree services, ISA certified arborists. Serving Rusk County.',
+  keywords: 'tree service Henderson TX, tree removal Henderson, stump grinding Henderson, tree trimming Henderson, Arp tree service, Overton tree service, Rusk County tree care',
   alternates: {
     canonical: 'https://treeserviceconnect.com/tree-service-henderson-tx'
   },
   openGraph: {
-    title: 'Tree Service Henderson TX - Top Rated Companies Within 25 Miles',
-    description: 'Find qualified tree service professionals in Henderson, TX and surrounding areas. Get free quotes for tree removal, trimming, stump grinding & emergency services from local experts.',
+    title: 'Tree Service Henderson TX - Scenic Piney Woods Tree Specialists',
+    description: 'Professional tree care in beautiful Henderson, TX - Gateway to Piney Woods. Hardwood & pine experts, lakefront property tree services, ISA certified arborists. Serving Rusk County.',
     url: 'https://treeserviceconnect.com/tree-service-henderson-tx',
     siteName: 'TreeServiceConnect',
     images: [

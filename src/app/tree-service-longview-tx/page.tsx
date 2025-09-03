@@ -77,15 +77,15 @@ export default async function LongviewTreeServicePage() {
 }
 
 export const metadata = {
-  title: 'Tree Service Longview TX - Top Rated Companies Within 25 Miles',
-  description: 'Find qualified tree service professionals in Longview, TX and surrounding areas. Get free quotes for tree removal, trimming, stump grinding & emergency services from local experts.',
-  keywords: 'tree service Longview TX, tree removal Longview, stump grinding Longview, tree trimming Longview, White Oak tree service, Gladewater tree service',
+  title: 'Tree Service Longview TX - East Texas Regional Hub Tree Care',
+  description: 'Professional tree services in Longview, TX - East Texas\'s largest metro. Emergency storm damage, tree removal, trimming & stump grinding. Licensed arborists serving Gregg County.',
+  keywords: 'tree service Longview TX, tree removal Longview, stump grinding Longview, tree trimming Longview, White Oak tree service, Gladewater tree service, Gregg County arborists',
   alternates: {
     canonical: 'https://treeserviceconnect.com/tree-service-longview-tx'
   },
   openGraph: {
-    title: 'Tree Service Longview TX - Top Rated Companies Within 25 Miles',
-    description: 'Find qualified tree service professionals in Longview, TX and surrounding areas. Get free quotes for tree removal, trimming, stump grinding & emergency services from local experts.',
+    title: 'Tree Service Longview TX - East Texas Regional Hub Tree Care',
+    description: 'Professional tree services in Longview, TX - East Texas\'s largest metro. Emergency storm damage, tree removal, trimming & stump grinding. Licensed arborists serving Gregg County.',
     url: 'https://treeserviceconnect.com/tree-service-longview-tx',
     siteName: 'TreeServiceConnect',
     images: [

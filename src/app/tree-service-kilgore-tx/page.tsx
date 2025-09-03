@@ -77,15 +77,15 @@ export default async function KilgoreTreeServicePage() {
 }
 
 export const metadata = {
-  title: 'Tree Service Kilgore TX - Top Rated Companies Within 25 Miles',
-  description: 'Find qualified tree service professionals in Kilgore, TX and surrounding areas. Get free quotes for tree removal, trimming, stump grinding & emergency services from local experts.',
-  keywords: 'tree service Kilgore TX, tree removal Kilgore, stump grinding Kilgore, tree trimming Kilgore, Tatum tree service, Overton tree service',
+  title: 'Tree Service Kilgore TX - Oil Heritage City Arborists & Tree Care',
+  description: 'Expert tree services in historic Kilgore, TX - Heart of East Texas oil country. Pine tree specialists, storm damage cleanup, residential tree removal. Serving Rusk & Gregg Counties.',
+  keywords: 'tree service Kilgore TX, tree removal Kilgore, stump grinding Kilgore, tree trimming Kilgore, Tatum tree service, Overton tree service, Rusk County arborists',
   alternates: {
     canonical: 'https://treeserviceconnect.com/tree-service-kilgore-tx'
   },
   openGraph: {
-    title: 'Tree Service Kilgore TX - Top Rated Companies Within 25 Miles',
-    description: 'Find qualified tree service professionals in Kilgore, TX and surrounding areas. Get free quotes for tree removal, trimming, stump grinding & emergency services from local experts.',
+    title: 'Tree Service Kilgore TX - Oil Heritage City Arborists & Tree Care',
+    description: 'Expert tree services in historic Kilgore, TX - Heart of East Texas oil country. Pine tree specialists, storm damage cleanup, residential tree removal. Serving Rusk & Gregg Counties.',
     url: 'https://treeserviceconnect.com/tree-service-kilgore-tx',
     siteName: 'TreeServiceConnect',
     images: [
